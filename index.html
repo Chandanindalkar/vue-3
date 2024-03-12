@@ -37,7 +37,7 @@
     <div v-if="showBooks">
       <ul>
         <li 
-          v-for="book in books" 
+          v-for="book in favoriteBooks" 
           :class="{ fav: book.isFav }"
           @click="toggleFavBooks(book.id-1)"
         >
